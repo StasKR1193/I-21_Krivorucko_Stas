@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Реєстрація на навчальний курс</title>
+</head>
+<body>
+    <h1>Реєстрація на навчальний курс</h1>
+    
+    <form>
+        <p>
+            <label>Ім'я *</label><br>
+            <input type="text" name="firstName" required>
+        </p>
+        
+        <p>
+            <label>Прізвище *</label><br>
+            <input type="text" name="lastName" required>
+        </p>
+        
+        <p>
+            <label>Електронна пошта *</label><br>
+            <input type="email" name="email" required>
+        </p>
+        
+        <p>
+            <label>Номер телефону </label><br>
+            <input type="tel" name="phone">
+        </p>
+        
+        <p>
+            <label>дата заїзду *</label><br>
+            <input type="date" name="checkInDate" required>
+        </p>
+        
+        <p>
+            <label>дата виїзду *</label><br>
+            <input type="date" name="checkOutDate" required>
+        </p>
+        
+        <p>
+            <label>кількість гостей</label><br>
+            <input type="number" name="guests" min="1" max="6">
+        </p>
+
+        <p>
+            <label>тип номера *</label><br>
+            <input type="radio" name="level" value="Стандарт" required> Стандарт<br>
+            <input type="radio" name="level" value="Напівлюкс" required> Напівлюкс<br>
+            <input type="radio" name="level" value="Люкс" required> Люкс
+        </p>
+        
+        <p>
+            <label>Додаткові послуги</label><br>
+            <input type="checkbox" name="services" value="Сніданок"> Сніданок<br>
+            <input type="checkbox" name="services" value="Паркінг"> Паркінг<br>
+            <input type="checkbox" name="services" value="Трансфер"> Трансфер<br>
+            <input type="checkbox" name="services" value="Додаткове прибирання"> Додаткове прибирання
+        </p>
+        
+        <p>
+            <label>Місто</label><br>
+            <select name="format">
+                <option value="">Київ</option>
+                <option value="online">Львів</option>
+                <option value="offline">Одеса</option>
+                <option value="mixed">Ужгород</option>
+                <option value="mixed">Чернівці</option>
+            </select>
+        </p>
+        
+        <p>
+            <label>Додаткові побажання (макс. 250 символів</label><br>
+            <textarea name="reason" rows="5" maxlength="250"></textarea>
+        </p>
+        
+        <p>
+            <button type="submit">Відправити</button>
+            <button type="reset">Очистити</button>
+        </p>
+    </form>
+</body>
+</html>
